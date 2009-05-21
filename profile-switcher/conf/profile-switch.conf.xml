@@ -1,0 +1,13 @@
+<profile-switch>
+  <subject name="java">
+    <alias>/usr/local/java</alias>
+    <profile name="1.5">
+      <description>java 1.5</description>
+      <path>/usr/local/jdk1.5_04</path>
+    </profile>
+    <profile name="1.6">
+      <description>java 1.6</description>
+      <path>/usr/local/jdk1.6.0_04</path>
+    </profile>
+  </subject>
+</profile-switch>

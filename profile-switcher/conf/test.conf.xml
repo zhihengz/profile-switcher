@@ -1,0 +1,24 @@
+<profile-switch>
+  <subject name="java">
+    <alias>/usr/local/java</alias>
+    <profile name="1.5">
+      <description>java 1.5</description>
+      <path>/usr/local/jdk1.5_04</path>
+    </profile>
+    <profile name="1.6">
+      <description>java 1.6</description>
+      <path>/usr/local/jdk1.6.0_04</path>
+    </profile>
+  </subject>
+  <subject name="test">
+    <alias>/home/zhihengz/tmp/test</alias>
+    <profile name="test1">
+      <description>test 1</description>
+      <path>/home/zhihengz/tmp/test1</path>
+    </profile>
+    <profile name="test2">
+      <description>/home/zhihengz/tmp/test2</description>
+      <path>/home/zhihengz/tmp/test2</path>
+    </profile>
+  </subject>
+</profile-switch>

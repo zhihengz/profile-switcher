@@ -1,0 +1,39 @@
+Summary: development profile switcher
+Name: %{pkgname}
+Version: %{ver}
+Release: %{rel}
+License: GPL
+Group: System Environment/Base
+Source0: %{name}-%{version}.tar.gz
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+
+%description
+switch different profile for a subject in development
+
+%prep
+%setup -q
+
+%build
+
+%install
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT/etc
+mkdir -p $RPM_BUILD_ROOT/usr/local/bin
+make install DESTDIR=$RPM_BUILD_ROOT
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+
+%files
+%defattr(-,root,root,-)
+/etc/profile-switch.conf.sample
+/usr/local/bin/switcher
+
+%doc
+
+
+%changelog
+* Mon May 18 2009 Jason Zhang <jzhang@gmail.com>
+- Initial build for profile-switcher
+
