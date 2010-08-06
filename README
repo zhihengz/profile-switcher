@@ -1,0 +1,8 @@
+profile-switcher
+
+switch between mutiple profiles.
+
+For example, mutiple java version can be installed in same machine. while this
+tool can switch wich java will be used as /usr/local/bin/java
+
+
